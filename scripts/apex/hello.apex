@@ -65,18 +65,21 @@
 
 
 
-BankAccount acc1=new BankAccount(1001,'Alice',5000,'Savings');
-BankAccount acc2=new BankAccount(1002,'Bob',3000,'Checking');
+// BankAccount acc1=new BankAccount(1001,'Alice',5000,'Savings');
+// BankAccount acc2=new BankAccount(1002,'Bob',3000,'Checking');
 
-List<BankAccount> accounts=new List<BankAccount>();
-accounts.add(acc1);
-accounts.add(acc2);
-System.debug('Bank Accounts: '+accounts);
+// List<BankAccount> accounts=new List<BankAccount>();
+// accounts.add(acc1);
+// accounts.add(acc2);
+// System.debug('Bank Accounts: '+accounts);
 
 
-Bank sbi=new Bank('State Bank of India', 'SBIN0001234',accounts);
-System.debug('Bank Details: '+sbi);
+// Bank sbi=new Bank('State Bank of India', 'SBIN0001234',accounts);
+// System.debug('Bank Details: '+sbi);
 
-System.debug('Deposit Operation: ' + sbi.deposit(1001, 2000));
-System.debug('Withdraw Operation: ' + sbi.withdraw(1002, 1000));
-System.debug('Transfer Operation: ' + sbi.transfer(1001, 1002, 500));
+// System.debug('Deposit Operation: ' + sbi.deposit(1001, 2000));
+// System.debug('Withdraw Operation: ' + sbi.withdraw(1002, 1000));
+// System.debug('Transfer Operation: ' + sbi.transfer(1001, 1002, 500));
+
+
+MapDemo.main();
