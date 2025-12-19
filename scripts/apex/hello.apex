@@ -23,6 +23,17 @@
 // System.debug(per.toString());
 
 
-PremiumCalculation pc=new PremiumCalculation( 50000, 4,'Unmarried','Temporary Job');
-double premium=pc.calculatePremium(pc.income, pc.maritalStatus, pc.EmployeeStatus, pc.serviceYears);
-System.debug('Calculated Premium: '+premium);
+// PremiumCalculation pc=new PremiumCalculation( 50000, 4,'Unmarried','Temporary Job');
+// double premium=pc.calculatePremium(pc.income, pc.maritalStatus, pc.EmployeeStatus, pc.serviceYears);
+// System.debug('Calculated Premium: '+premium);
+
+
+Notification notification=new Notification();
+notification.sendNotification('This is a general notification.');
+EmailNotification emailNotif=new EmailNotification();
+emailNotif.sendNotification('This is an email notification.');
+SMSNotification smsNotif=new SMSNotification();
+smsNotif.sendNotification('This is an SMS notification.');
+
+
+
