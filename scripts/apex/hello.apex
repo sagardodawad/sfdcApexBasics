@@ -82,4 +82,39 @@
 // System.debug('Transfer Operation: ' + sbi.transfer(1001, 1002, 500));
 
 
-MapDemo.main();
+// MapDemo.main();
+
+
+Store store=new Store(
+    1,
+    'Tech Store',
+    'Downtown',
+    new List<Product>{
+        new Product(1, 'Laptop', 10, 750, 'Electronics'),
+        new Product(2, 'Smartphone', 20, 500, 'Electronics'),
+        new Product(3, 'Headphones', 15, 150, 'Accessories'),
+        new Product(4, 'Camera', 8, 900, 'Accessories'),
+        new Product(5, 'Smartwatch', 25, 200, 'Accessories')
+
+    }
+);
+
+System.debug('Store Details: ' + store);
+System.debug('Products in Store: ' + store.products);
+store.products.add(new Product(6, 'Tablet', 12, 300, 'Electronics'));
+System.debug('Updated Products in Store: ' + store.products);
+double revenue = store.sellProduct(2, 5);
+System.debug('Revenue from Sale: ' + revenue);
+System.debug('Products after Sale: ' + store.products);
+
+
+store.purchaseProduct(3, 10);
+System.debug('Products after Purchase: ' + store.products);
+
+double revenueAfterSecondSale = store.sellProduct(3, 24);
+System.debug('Revenue from Second Sale: ' + revenueAfterSecondSale);
+System.debug('Products after Second Sale: ' + store.products);
+
+
+List<Product> electronics = store.getProductsByCategory('Electronics');
+System.debug('Electronics Products: ' + electronics);
