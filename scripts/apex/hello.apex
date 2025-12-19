@@ -37,3 +37,7 @@ smsNotif.sendNotification('This is an SMS notification.');
 
 
 
+Payment payment=new Payment();
+payment.processPayment(250);    
+payment.processPayment(100, 'Credit Card');
+payment.processPayment(200, 'PayPal', 10);
