@@ -28,16 +28,37 @@
 // System.debug('Calculated Premium: '+premium);
 
 
-Notification notification=new Notification();
-notification.sendNotification('This is a general notification.');
-EmailNotification emailNotif=new EmailNotification();
-emailNotif.sendNotification('This is an email notification.');
-SMSNotification smsNotif=new SMSNotification();
-smsNotif.sendNotification('This is an SMS notification.');
+// Notification notification=new Notification();
+// notification.sendNotification('This is a general notification.');
+// EmailNotification emailNotif=new EmailNotification();
+// emailNotif.sendNotification('This is an email notification.');
+// SMSNotification smsNotif=new SMSNotification();
+// smsNotif.sendNotification('This is an SMS notification.');
 
 
 
-Payment payment=new Payment();
-payment.processPayment(250);    
-payment.processPayment(100, 'Credit Card');
-payment.processPayment(200, 'PayPal', 10);
+// Payment payment=new Payment();
+// payment.processPayment(250);    
+// payment.processPayment(100, 'Credit Card');
+// payment.processPayment(200, 'PayPal', 10);
+
+// ListDemo.main();
+
+
+// Set<Integer> data=new Set<Integer>();
+ 
+// data.add(10);
+// data.add(20);
+// data.add(10);  
+// System.debug('Set contents: '+data);
+ 
+Set<Employee> emps=new Set<Employee>();
+Address add1=new Address(12,'MG Road','Pune','MH','411001');
+Address add2=new Address(34,'FC Road','Pune','MH','411002');
+ 
+Employee emp1=new Employee('john','john@gmail.com',123456,add1,101,'Developer');
+Employee emp2=new Employee('ram','ram@gmail.com',123456,add2,102,'Developer');
+emps.add(emp1);
+emps.add(emp2);
+emps.add(emp2);
+System.debug('Employee Set contents: '+emps);
