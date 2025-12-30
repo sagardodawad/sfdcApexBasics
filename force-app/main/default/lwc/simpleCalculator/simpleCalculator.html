@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Simple Calculator">
+        <lightning-input  type="number" onblur={handleFirstNumber} label="First number" value={firstNumber}></lightning-input>
+        <lightning-input  type="number" onblur={handleSecondNumber} label="Second number" value={secondNumber}></lightning-input>
+
+     
+    
+        <lightning-button  label="Addition" onclick={add}></lightning-button>
+        <lightning-button label="Subtraction" onclick={sub}></lightning-button>
+        <lightning-button label="Multiplication" onclick={mul}></lightning-button>
+        <lightning-button label="division" onclick={div}></lightning-button>
+           <template if:false={checkResults}>
+            Result: <lightning-badge label={result}>  </lightning-badge>
+        </template>
+    </lightning-card>
+</template>
