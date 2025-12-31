@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Bank Account details">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Account Name</th>
+                    <th>Account Number</th>     
+                    <th>Account Type</th>     
+                    <th>Balance</th>     
+                    <th>Bank</th>         
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={bankAccountsList.data} for:item="acc">
+                    <tr key={acc.id}>
+                        <td>{acc.Account_Name__c}</td>
+                        <td>{acc.Name}</td>
+                        <td>{acc.Account_Type__c}</td>
+                        <td>{acc.Balance__c}</td>
+                        <td>{acc.Bank__r.Bank_Name__c}</td>
+                    </tr>
+                    </template>
+                </tbody>
+            </table>
+      
+    </lightning-card>
+</template>

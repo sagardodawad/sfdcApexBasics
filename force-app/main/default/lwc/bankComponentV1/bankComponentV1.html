@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Bank details">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Bank Name</th>
+                    <th>IFSC</th>     
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={bankList.data} for:item="bank">
+                    <tr key={bank.id}>
+                        <td>{bank.Bank_Name__c}</td>
+                        <td>{bank.Name}</td>
+                    </tr>
+                    </template>
+                </tbody>
+            </table>
+      
+    </lightning-card>
+</template>
