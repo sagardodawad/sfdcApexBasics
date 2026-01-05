@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Success_In_kannada</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Success_In_kannada</shortDescription>
+        <value>ಆಯ್ಕೆಮಾಡಿದ ದಾಖಲೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ</value>
+    </labels>
+    <labels>
+        <fullName>kannadaErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>kannadaErrorMessage</shortDescription>
+        <value>ಆಯ್ಕೆಮಾಡಿದ ದಾಖಲೆ ಅಳಿಸುವಿಕೆ ವಿಫಲವಾಗಿದೆ</value>
+    </labels>
+</CustomLabels>
