@@ -1,0 +1,33 @@
+<template>
+
+    <lightning-card title="Child to Parent Communication">    
+
+        <div class="slds-box" style="background-color: aqua;">
+
+        <strong class="slds-align_absolute-center">Parent Component</strong>
+
+        <br><br>
+
+        <template if:true={formData}>
+
+            <p><strong>Name:</strong> {formData.name}</p>
+
+            <p><strong>Email:</strong> {formData.email}</p>
+
+        </template>
+
+    </div>
+
+    <div class="slds-box" style="background-color: aliceblue;">
+
+        <c-child-communication-component onformsubmit={handleFormSubmit} ></c-child-communication-component>
+
+ 
+
+    </div>
+
+    </lightning-card>
+
+ 
+
+</template>
