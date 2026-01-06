@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Product Subscriber">
+
+        <ul>
+
+            <template for:each={products} for:item="product">
+
+                <li key={product}>{product}</li>
+
+            </template>
+
+        </ul>
+
+    </lightning-card>
+
+</template>
